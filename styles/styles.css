@@ -31,6 +31,7 @@ h2.tituloh2 span{
 
 .flex{
     display: flex;
+    align-items: center;
 }
 
 
@@ -117,6 +118,7 @@ section.topo-do-site.flex{
     font-size: 42px;
 }
 
+
 .topo-do-site .txt-top-site h1 span{
     color: blueviolet;
 }
@@ -125,36 +127,93 @@ section.topo-do-site.flex{
     margin: 40px 0;
 }
 
+
+/* Função keyframes para fazer a imagem flutuar em loop infinito de cima para baixo/ baixo cima */
 .topo-do-site .imag-top-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
-
 @keyframes flutuar{
     0%{top: 0;}
     100% {top: -30px;}
 } 
-
+/* fim Função keyframes */
 
 /* ESTILO DAS ESPECIALIDADES SITE */
 
 section.especialidades{
     padding: 40px 4%;
 }
+section.especialidades .flex{
+    gap: 60px;
+}
 
 .especialidades .especialidades-box{
     color: #fff;
     padding: 40px;
+    border-radius: 20px;
+    /* border:solid #b38bd83d; */
+    margin-top: 50px;
+    transition: 0.3s;
+} 
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30''''''''''''''''''''''''px #892be2;
 } 
 
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: blueviolet;
+    color: #8a2be2;
 }
 
 .especialidades .especialidades-box h3{
     font-size: 30px;
     margin: 15px 0px;
+}
+
+
+
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #FFF;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #892be2;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Botões */
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #892be2;
+    transition: 0.3s;
+}
+
+.sobre .txt-sobre .btn-social button:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px;
 }
