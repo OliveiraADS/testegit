@@ -46,11 +46,10 @@ h2.tituloh2 span{
     transition: 0.3s;
 }
 
-.contato button:hover{
+button:hover{
     color: rgb(255, 255, 255);
     box-shadow: 0px 0px 8px rgb(178, 96, 255);
     transform: scale(1.05);
-    
 }
 
 
@@ -159,7 +158,7 @@ section.especialidades .flex{
 } 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 30''''''''''''''''''''''''px #892be2;
+    box-shadow: 0px 0px 30px #892be2;
 } 
 
 .especialidades .especialidades-box i{
@@ -208,12 +207,11 @@ section.sobre .flex{
 .sobre .txt-sobre .btn-social button{
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 100%;
+    border: none;
+    font-size:26px;
     background-color: #892be2;
     transition: 0.3s;
-}
-
-.sobre .txt-sobre .btn-social button:hover{
-    transform: scale(1.03);
-    box-shadow: 0px 0px 20px;
+    cursor: pointer;
+    margin: 0 5px;
 }
